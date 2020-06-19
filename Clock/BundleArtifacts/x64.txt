@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Terry.Boswell\source\repos\Clock\Clock\bin\x64\Debug\Clock_1.0.9.0_x64_Debug.appx
+SymbolPackage=C:\Users\Terry.Boswell\source\repos\Clock\Clock\obj\x64\Debug\Symbols\Clock_1.0.9.0_x64_Debug.appxsym

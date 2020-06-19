@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="Clock.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Clock"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"  
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style x:Key="StackPanelStyle1" TargetType="StackPanel"/>
+    </Page.Resources>
+
+    <StackPanel Background="{ThemeResource SystemChromeBlackHighColor}" RequestedTheme="Default" Orientation="Horizontal" >
+        <StackPanel Width="1000" Height="1070">
+            <WebView x:ConnectionId='18' x:Name="LargeMap" Height="500" Width="973"/>
+            <WebView x:ConnectionId='19' x:Name="SmallMap" Height="500" Width="973"/>
+        </StackPanel>
+        <StackPanel x:ConnectionId='2' x:Name="main" Visibility="Visible" Width="900" Height="1070">
+            <Rectangle Height="44"/>
+            <TextBlock x:ConnectionId='3' x:Name="Date" Text="1/1/1" TextWrapping="Wrap" FontSize="180" FontFamily="Arial Black" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Height="205"/>
+            <TextBlock x:ConnectionId='4' x:Name="Clock" Text="00:00" TextWrapping="Wrap" FontSize="210" FontFamily="Arial Black" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Height="224"/>
+            <StackPanel Height="559">
+                <StackPanel Orientation="Horizontal" Height="80">
+                    <TextBlock x:ConnectionId='14' x:Name="TempLabel" Text="Temp: " FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="10,0,24,0"></TextBlock>
+                    <TextBlock x:ConnectionId='15' x:Name="Temp" Text="85" FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,150,0"></TextBlock>
+                    <TextBlock x:ConnectionId='16' x:Name="FeelsLikeLabel" Text="Feels Like: " FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,24,0"></TextBlock>
+                    <TextBlock x:ConnectionId='17' x:Name="FeelsLike" Text="85" FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="80">
+                    <TextBlock x:ConnectionId='10' x:Name="WindLabel" Text="Wind: " FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="10,0,24,0"></TextBlock>
+                    <TextBlock x:ConnectionId='11' x:Name="Wind" Text="85" FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,100,0"></TextBlock>
+                    <TextBlock x:ConnectionId='12' x:Name="HumidityLabel" Text="Humidity: " FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,24,0"></TextBlock>
+                    <TextBlock x:ConnectionId='13' x:Name="Humidity" Text="85" FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="80">
+                    <TextBlock x:ConnectionId='9' x:Name="CurrentConditions" Text="Conditions" FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="10,0,10,0"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="80">
+                    <TextBlock x:ConnectionId='5' x:Name="HighTideLabel" Text="High: " FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="10,0,10,0"></TextBlock>
+                    <TextBlock x:ConnectionId='6' x:Name="HighTide" Text="12:00am" FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,30,0"></TextBlock>
+                    <TextBlock x:ConnectionId='7' x:Name="LowTideLabel" Text="Low: " FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,10,0"></TextBlock>
+                    <TextBlock x:ConnectionId='8' x:Name="LowTide" Text="12:00am" FontSize="64" RequestedTheme="Default" Foreground="#FFF3F3F3" FocusVisualPrimaryBrush="#FFF1F1F1" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>
+

@@ -1,0 +1,1 @@
+C:\Users\Terry.Boswell\source\repos\Clock\Clock\Clock.csproj;x64
